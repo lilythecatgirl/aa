@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>i am a catgirl</title>
+    <meta property="og:title" content="lilycat" />
+    <meta property="og:description" content="nya" />
+    <link rel="stylesheet" href="background.css">     
+    <script src="https://kit.fontawesome.com/ead57bb0a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <main>
+      <section class="wrapper">
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+    <div class="overlay fullscreen">
+        <label for="overlay-toggle" onclick="playaudio()">
+            <span style="text-shadow: 3px 3px 5px black;" class="no-hover">A better version of this site will be available soon. Check me later!</span>
+            <span style="text-shadow: 5px 5px 5px black; text-align: center; color: white; font-size: 26px; margin-top: 0px;">interact with this site for a surprise</span>
+        </label>
+    </div>
+    <audio loop="" preload="auto" id="audio">
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <section class="fullscreen text-content">
+      <div id="center">
+
+    </div>
+       
+ <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="center">
+        <h2 style="text-shadow: 5px 5px 5px black; text-align: center; color: white; font-size: 26px; margin-top: -6%;">A better version of this site will be available soon. Check me later!</h2>
+
+  </div>
+  <script>
+    function playaudio() {
+        var audio = document.getElementById("audio");
+        audio.volume = 1;
+        audio.play()
+    }
+    
+
+
+</script> 
+  <style>
+
+a {
+    padding: 3px;
+    top: 0;
+    right: 100;
+    float: right;
+    color: #f7f7f7eb;
+    letter-spacing: 1px;
+    font-size: 25px
+}
+
+
+@font-face {
+  font-family: opensansreg;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+* {
+  font-family: opensansreg;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.no-hover {
+  display: block;
+}
+
+h1 {
+  margin-top: 4px;
+  margin-left: 4px;
+  font-size: 30.2px;
+  color:rgb(255, 0, 212);
+}
+
+b:hover {
+  transition:.4s!important;
+  color:#fff!important
+}
+
+.othercolor {
+  font-size: 20px;
+  color:#ae00ff;
+  margin-top: 1%;
+}
+.h3 {
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: -140;
+  position: absolute;
+  text-align: center;
+  font-size: 55px;
+  color: rgb(255, 0, 221);
+  text-shadow: 5px 5px 5px black;
+}
+
+
+.text {
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 0, 221);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.block {
+	position: relative;
+	width: 360px;
+	height: 163px;
+	background: linear-gradient(0deg, rgb(24, 24, 24), #170018);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -3px;
+	top: -3px;
+  bottom: -3px;
+	background: linear-gradient(45deg, #fb0094, #ae00ff, #ff00c8,#ff0080);
+	background-size: 300%;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	z-index: -1;
+	animation: steam 15s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	90% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
+.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.hover {
+  display: none;
+}
+
+
+#overlay-toggle {
+  position:absolute;
+  display: none;
+}
+#toggle {
+  position:absolute;
+  display: none;
+}
+.overlay {
+  z-index: 1;
+}
+.overlay label {
+  font-size: 35px;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vw;
+  color: rgb(255, 0, 212);
+}
+#center {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%)
+}
+#overlay-toggle:checked ~ .overlay {
+  animation-fill-mode: forwards;
+  animation-name: fade, hide;
+  animation-delay: 0s, 600ms;
+  animation-duration: 600ms, 1ms;
+}
+#overlay-toggle:checked ~ .overlay label {
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 500ms;
+}
+@media(hover: hover) {
+  .hover {
+    display: block;
+  }
+  .no-hover {
+    display: none;
+  }
+}
+@keyframes fade{
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}
+  </style>
+</html>
